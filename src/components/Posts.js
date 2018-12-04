@@ -5,7 +5,7 @@ class Posts extends React.Component {
 
     handlePostClick = (post) => {
         this.props.history.push({
-            pathname: '/post/' + post[0], 
+            pathname: '/DevBlog/post/' + post[0], 
             state: {title: post[1].title, created: post[1].created, content: post[1].content}
         })
     }
