@@ -31,8 +31,8 @@ class App extends Component {
           <Header />
           {this.state.loading ? <h1>Loading...</h1> :
             <Switch>
-              <Route exact path="/" render={props => <Posts {...props} posts={this.state.posts} />} />
-              <Route exact path="/post/:id" render={props => <FullPost {...props} />} />
+              <Route exact path="/DevBlog" render={props => <Posts {...props} posts={this.state.posts} />} />
+              <Route exact path="/DevBlog/post/:id" render={props => <FullPost {...props} />} />
               <Route render={() => {
                 return <p><strong>Page Not Found</strong></p>
               }} />
