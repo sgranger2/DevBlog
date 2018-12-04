@@ -1,13 +1,13 @@
 {
   "main.css": "/DevBlog/static/css/main.900b1085.chunk.css",
-  "main.js": "/DevBlog/static/js/main.063d0e9b.chunk.js",
-  "main.js.map": "/DevBlog/static/js/main.063d0e9b.chunk.js.map",
+  "main.js": "/DevBlog/static/js/main.72a3f8e6.chunk.js",
+  "main.js.map": "/DevBlog/static/js/main.72a3f8e6.chunk.js.map",
   "static/js/1.f7483ca9.chunk.js": "/DevBlog/static/js/1.f7483ca9.chunk.js",
   "static/js/1.f7483ca9.chunk.js.map": "/DevBlog/static/js/1.f7483ca9.chunk.js.map",
   "runtime~main.js": "/DevBlog/static/js/runtime~main.94ae879d.js",
   "runtime~main.js.map": "/DevBlog/static/js/runtime~main.94ae879d.js.map",
   "static/css/main.900b1085.chunk.css.map": "/DevBlog/static/css/main.900b1085.chunk.css.map",
   "index.html": "/DevBlog/index.html",
-  "precache-manifest.ca4c4ab6e6417bc93a14231387980740.js": "/DevBlog/precache-manifest.ca4c4ab6e6417bc93a14231387980740.js",
+  "precache-manifest.4bd0523826a1dc5d4e754becd8ad4081.js": "/DevBlog/precache-manifest.4bd0523826a1dc5d4e754becd8ad4081.js",
   "service-worker.js": "/DevBlog/service-worker.js"
 }
