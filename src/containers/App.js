@@ -36,7 +36,7 @@ class App extends Component {
 
   handleNewPost = () => {
     this.props.history.push({
-      pathname: '/DevBLog/newPost'
+      pathname: '/DevBlog/newPost'
     })
   }
 

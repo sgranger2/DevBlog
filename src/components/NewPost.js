@@ -14,7 +14,6 @@ class NewPost extends React.Component {
     componentDidMount() {
         firebaseAuth().currentUser.getIdToken().then((token) => {
             this.setState({token: token})
-            console.log(token);
         })
     }
 
