@@ -36,7 +36,7 @@ class App extends Component {
 
   handleNewPost = () => {
     this.props.history.push({
-      pathname: '/newPost'
+      pathname: '/DevBLog/newPost'
     })
   }
 
@@ -47,9 +47,9 @@ class App extends Component {
           <Header signedIn={this.state.signedIn} adminClicked={this.handleGoogleSignIn} newPostClicked={this.handleNewPost} />
           {this.state.loading ? <h1>Loading...</h1> :
             <Switch>
-              <Route exact path="/" render={props => <Posts {...props} posts={this.state.posts} />} />
-              <Route exact path="/post/:id" render={props => <FullPost {...props} />} />
-              <Route exact path="/newpost" component={NewPost} />
+              <Route exact path="/DevBlog" render={props => <Posts {...props} posts={this.state.posts} />} />
+              <Route exact path="/DevBlog/post/:id" render={props => <FullPost {...props} />} />
+              <Route exact path="/DevBlog/newpost" component={NewPost} />
               <Route render={() => {
                 return <p><strong>Page Not Found</strong></p>
               }} />

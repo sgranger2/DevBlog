@@ -28,14 +28,14 @@ class NewPost extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:5000/exampleblog-538df/us-central1/posts', {
+        axios.post('https://us-central1-exampleblog-538df.cloudfunctions.net/posts', {
             title: this.state.title,
             content: this.state.content,
             token: this.state.token
         })
         // window.location.reload();
         this.props.history.push({
-            pathname: '/'
+            pathname: '/DevBlog'
         })
     }
 
