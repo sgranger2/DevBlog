@@ -14,7 +14,7 @@ class Posts extends React.Component {
                     <h3 className="fullpost-title">{newProps.title}</h3>
                     <time className="fullpost-date">{timeString.toDateString()}</time>
                     <p className="fullpost-content">{newProps.content}</p>
-                    <Link className="backButton" to="/DevBlog">Back</Link>
+                    <Link className="backButton" to="/">Back</Link>
                 </div>
             </div>
         );

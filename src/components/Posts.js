@@ -5,14 +5,13 @@ class Posts extends React.Component {
 
     handlePostClick = (post) => {
         this.props.history.push({
-            pathname: '/DevBlog/post/' + post[0], 
+            pathname: '/post/' + post[0], 
             state: {title: post[1].title, created: post[1].created, content: post[1].content}
         })
     }
 
     render() {
         const posts = this.props.posts;
-        console.log(posts);
         const blogPosts = posts.map((post) => {
             return <Post key={post[0]} id={post[0]} title={post[1].title} created={post[1].created} content={post[1].content} clicked={() => this.handlePostClick(post)} />
         });
