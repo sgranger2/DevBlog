@@ -17,8 +17,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // axios.get('https://us-central1-exampleblog-538df.cloudfunctions.net/posts')
-    axios.get('http://localhost:5000/exampleblog-538df/us-central1/posts')
+    axios.get('https://us-central1-exampleblog-538df.cloudfunctions.net/posts')
+    // axios.get('http://localhost:5000/exampleblog-538df/us-central1/posts')
       .then((response) => {
         this.setState({ posts: Object.entries(response.data).reverse(), loading: false });
       })
