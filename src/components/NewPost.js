@@ -31,11 +31,11 @@ class NewPost extends React.Component {
             title: this.state.title,
             content: this.state.content,
             token: this.state.token
-        })
+        });
         // window.location.reload();
         this.props.history.push({
             pathname: '/DevBlog'
-        })
+        });
     }
 
     render() {
