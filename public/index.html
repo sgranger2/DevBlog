@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="Description" content="A Serverless Blog made using ReactJS and Firebase">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest"> -->
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
     <link
       href="https://fonts.googleapis.com/css?family=Oswald:300,400,700"
       rel="stylesheet"
@@ -38,6 +47,13 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').catch(function(ex) {
+          console.warn(ex);
+          console.warn('(This warning can be safely ignored outside of the production build.)');
+        });
+      }
+    </script>
   </body>
 </html>

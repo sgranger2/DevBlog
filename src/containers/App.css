@@ -88,7 +88,7 @@ li {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -216,4 +216,56 @@ li {
   color: #8A9AF0;
   cursor: pointer;
   font-size: 1.1rem;
+}
+
+.newPost {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  font-size: 1.35em;
+  margin-bottom: 35px;
+  background-color: #403E4F;
+  -webkit-box-shadow: 9px 12px 9px 0px rgba(41, 39, 53, 0.75);
+  -moz-box-shadow: 9px 12px 9px 0px rgba(41, 39, 53, 0.75);
+  box-shadow: 9px 12px 9px 0px rgba(41, 39, 53, 0.75);
+}
+
+.newPost h2 {
+  margin: 30px;
+}
+
+.newPost-form {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.newPost-title {
+  width: 100%;
+}
+
+.newPost-title input {
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.newPost-content {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.newPost-content-text {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.newPost-button {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }

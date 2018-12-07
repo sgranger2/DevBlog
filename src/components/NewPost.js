@@ -1,5 +1,5 @@
 import React from 'react';
-import {firebaseAuth} from './Firebase/constants';
+import { firebaseAuth } from './Firebase/constants';
 
 const axios = require('axios');
 
@@ -13,16 +13,16 @@ class NewPost extends React.Component {
 
     componentDidMount() {
         firebaseAuth().currentUser.getIdToken().then((token) => {
-            this.setState({token: token})
+            this.setState({ token: token })
         })
     }
 
     handleTitleChange = (event) => {
-        this.setState({title: event.target.value})
+        this.setState({ title: event.target.value })
     }
 
     handleContentChange = (event) => {
-        this.setState({content: event.target.value})
+        this.setState({ content: event.target.value })
     }
 
     handleSubmit = (event) => {
@@ -40,18 +40,22 @@ class NewPost extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-            <label>
-                Title:
-                <input type="text" onChange={this.handleTitleChange}/>
-            </label>
-              <label>
-                Content:
-                <textarea value={this.state.value} onChange={this.handleContentChange} />
-              </label>
-              <input type="submit" value="Submit" />
-            </form>
-          );
+            <div className="newPost">
+            <h2>New Post</h2>
+                <form className="newPost-form" onSubmit={this.handleSubmit}>
+                    <label className="newPost-title">
+                        Title:
+                <input  type="text" onChange={this.handleTitleChange} />
+                    </label>
+                    <label className="newPost-content">
+                        Content:
+                <textarea className="newPost-content-text" value={this.state.value} onChange={this.handleContentChange} />
+                    </label>
+                    <input className="btn btn-primary newPost-button" type="submit" value="Submit" />
+                </form>
+            </div>
+
+        );
     }
 }
 
