@@ -1,0 +1,62 @@
+@media only screen and (max-width: 500px) {
+    .header {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .subtitle {
+        margin-left: 18px;
+    }
+
+    .fullpost-inside {
+        padding: 18px;
+    }
+
+    .fullpost-content {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .left-header {
+        font-size: 1rem;
+    }
+
+    .fullpost {
+        margin-bottom: 0px;
+    }
+
+    .post {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .App-header {
+        margin-bottom: 0px;
+    }
+    .left-header {
+        margin-top: 15px;
+    }
+    .right-header {
+        margin-top: 15px;
+    }
+    .posts {
+        margin-top: 20px;
+    }
+    .fullpost {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .App-header {
+        margin-bottom: 0px;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+    .fullpost {
+        margin-top: 0px;
+    }
+}

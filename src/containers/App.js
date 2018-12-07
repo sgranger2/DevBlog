@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../queries.css';
 import Header from '../components/Header';
 import Posts from '../components/Posts';
 import FullPost from '../components/FullPost';
